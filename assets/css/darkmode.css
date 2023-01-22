@@ -1,0 +1,66 @@
+body.dark{
+    background-color: black;
+    color: #fff;
+}
+.header .widget .widget-item h2, .header .widget .widget-item p.dark {
+    margin: 0;
+    color: black;
+}
+
+.header .widget .widget-item p {
+    opacity: .7;
+    font-size: 20px;
+    color: black;
+}
+h5 {
+    margin-bottom: 5px;
+    color: black;
+}
+.metn{
+    color: black;
+}
+.title{
+    color: black;
+}
+
+.header .container .infos .titlename {
+    margin-bottom: 0px;
+    font-size: 74px;
+    font-weight: bold;
+}
+.subtitle{
+    color: black;
+}
+.subtitle1{
+    color: rgb(255, 255, 255);
+}
+.subtitle11{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.toggle{
+    position: relative;
+    height: 28px;
+    width: 56px;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.toggle::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: #ff7a57;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-out;
+}
+.toggle.active::before{
+    background-color: black;
+    left: calc(100% - 14px - 14px)
+}
